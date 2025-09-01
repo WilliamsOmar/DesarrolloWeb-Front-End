@@ -31,10 +31,17 @@ header {
     z-index: 100;
 }
 
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 nav ul {
     display: flex;
-    justify-content: center;
     list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 nav ul li {
@@ -48,6 +55,10 @@ nav ul li a {
     padding: 5px 10px;
     border-radius: 4px;
     transition: background-color 0.3s;
+}
+
+.contacto {
+    margin-left: auto;
 }
 
 nav ul li a:hover {
@@ -139,5 +150,11 @@ footer {
     
     .contenido {
         min-height: 150px;
+    }
+
+    nav {
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
     }
 }
